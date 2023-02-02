@@ -1,0 +1,131 @@
+@media screen and (min-width:1200px) {
+    .container{
+    width: 1200px ;
+    }
+    .adress-nav{
+        display: block;
+    }
+    .adress-nav .link{
+        margin-right: 40px;
+    }
+    /* -----CUSTOMERS----- */
+    .customers-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers{
+        gap: 24px;
+    }
+    .customers-item {
+        display: block;
+        width: 168px;
+        height: 88px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+    }
+    /* WORKERS */
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .workers.list {
+        gap: 24px;
+    }
+    /* -----FOOTER----- */
+    .logotype{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;
+      }
+      .end {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .end .logo{
+        justify-content: flex-start;
+        margin: 0;
+      }
+      .social-media{
+        margin: 0;
+        margin-right: 80px;
+      }
+      .social {
+        display: flex;
+        gap: 16px;
+      }
+      .footer {
+        display: flex;
+      }
+      .subcribe-field {
+        width: 264px;
+        height: 40px;
+        margin: 0;
+        margin-right: 24px;
+      }
+      .footer-subcribe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon-telegram {
+        margin-left: 16px;
+      }
+      .tittle-social{
+        justify-content: flex-start;
+      }
+      .text-footer {
+        padding: 0;
+      }
+/* ----FEATURES---- */
+.features{
+    flex-wrap: nowrap;
+}
+.features .tittle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-top: 8px;
+}
+.icon {
+    display: flex;
+    width: 264px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+/* ----COMPANY---- */
+.company{
+    display: contents;
+}
+.company .container{
+    padding-bottom: 120px;
+}
+/* ----HERO--- */
+.hero .tittle {    
+    margin-bottom: 48px;
+  }
+  .overlay {
+    width: 1200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/bcg-images/hero-bcg.jpg);
+  }
+  .overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/bcg-images/hero-2x.jpg);
+  }
+}
+
