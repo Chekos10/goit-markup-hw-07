@@ -124,6 +124,15 @@ img {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out ;
 }
+.mobile-menu > .container{
+  height: 100% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 51px;
+}
 
 .mobile-menu.is-open{
   transform: translateX(0);
@@ -132,7 +141,7 @@ img {
   position: relative;
   padding-left: 40px;
   padding-top: 80px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .mobile-menu-closed{
   position: absolute;
@@ -148,6 +157,7 @@ img {
   height: 24px;
   width: 24px;
 }
+
 .adress-nav-mobile .mobile-link{
   text-decoration: none;
   display: block;
@@ -159,12 +169,14 @@ img {
   text-transform: capitalize;
   color: #2E2F42;
 }
+.adress-nav-mobile{
+  margin-bottom: 20px;
+}
 .adress-nav-mobile .mobile-item:not(:last-child){
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .adress-mobile{
-  padding-top: 284px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .adress-mobile .mobile-link{
   font-family: 'Roboto';
@@ -192,8 +204,7 @@ img {
 
 .mobile-list{
   display: flex;
-  justify-content: flex-start;
-  gap: 56px;
+  justify-content: space-between;
 }
 .mobile-icon {
   width: 40px;
@@ -292,22 +303,7 @@ img {
 .adress-nav .link {
   position: relative;
 }
-.adress-nav .link::after {
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--hover-link-color);
-  border-radius: 2px;
-  transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.adress-nav .link:hover:after,
-.adress-nav .link:focus:after {
-  transform: scaleX(1);
-}
+
 /*under header section*/
 .hero {
   text-align: center;
@@ -382,7 +378,7 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* padding: 96px 18px 121px; */
+  padding: 0 18px;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -394,18 +390,17 @@ img {
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  min-width: 408px;
-  min-height: 584px;
+  max-width: 392px;
   background-color: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
 }
 .button-closed {
   display: flex;

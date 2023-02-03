@@ -17,10 +17,27 @@
   .adress-nav>.item{
     display: inline-block;
   }
+  /*---MODAL---*/
+  .modal {
+    max-width: 408px;
+  }
+  /*---NAVIGATION----*/
+  .adress-nav .link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #434455;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
   /* ----CUSTOMERS----- */
   .customers-section{
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+  .customers-section > .container{
+    padding-left: 92px;
+    padding-right: 92px;
   }
   .customers{
     column-gap: 16px;
@@ -83,6 +100,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 92px;
+    padding-right: 92px;
   }
   .logotype{
     display: flex;

@@ -9,10 +9,15 @@
         margin-right: 40px;
     }
     /* -----CUSTOMERS----- */
+    .customers-section > .container{
+      padding-left: unset;
+      padding-right: unset;
+    }
     .customers-section{
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
     .customers{
         gap: 24px;
     }
@@ -111,7 +116,9 @@
     margin-bottom: 48px;
   }
   .overlay {
-    width: 1200px;
+    max-width: 1440px;
+    padding-top: 192px;
+    padding-bottom: 192px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
