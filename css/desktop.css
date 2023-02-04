@@ -6,7 +6,13 @@
         display: block;
     }
     .adress-nav .link{
-        margin-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-right: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
     }
     /* -----CUSTOMERS----- */
     .customers-section > .container{
