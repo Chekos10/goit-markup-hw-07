@@ -5,4 +5,15 @@
     margin-right: auto;
     }  
 }
+@media  screen and (max-width:467px) {
+    .adress-nav-mobile .mobile-link{
+        font-size: 26px;
+    }
+    .adress-mobile .mobile-link.phone{
+        font-size: 22px;
+    }
+    .adress-mobile .mobile-link{
+        font-size: 18px;
+    }
+}
 
