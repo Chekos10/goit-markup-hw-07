@@ -25,6 +25,7 @@
     }
 
     .customers{
+      justify-content: center;
         gap: 24px;
     }
     .customers-item {
