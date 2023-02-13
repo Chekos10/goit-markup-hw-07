@@ -17,6 +17,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="page">
@@ -24,17 +27,20 @@
         <a href="./index.html" class="logo">
           <span class="first-logo"> WEB </span> STUDIO
         </a>
-        <nav>
+        <nav class="navigation">
           <ul class="nav-page list">
-            <li class="item">
-              <a href="./index.html" class="link">Studio</a>
-            </li>
+            <li class="item"><a href="./index.html" class="link">Studio</a></li>
             <li class="item">
               <a href="./portfolio.html" class="link current">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open_icon" width="32px" height="32px">
+            <use href="./img/bcg-images/symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <ul class="adress-nav list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com"
@@ -46,10 +52,80 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu_container">
+          <div class="mob-menu-top">
+            <button type="button" class="mobile-menu-closed js-close-menu">
+              <svg class="mobile-menu-closed_icon" width="8px" height="8px">
+                <use href="./img/bcg-images/vector-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <ul class="adress-nav-mobile list">
+              <li class="mobile-item">
+                <a class="mobile-link " href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-item">
+                <a class="mobile-link current" href="">Portfolio</a>
+              </li>
+              <li class="mobile-item">
+                <a class="mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="adress-mobile list">
+              <li class="mobile-item">
+                <a class="mobile-link phone" href="">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-item">
+                <a class="mobile-link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-list list">
+              <li class="mobile-icon">
+                <a href="" class="mobile-list-link">
+                  <svg class="instagram-icon" width="24px" height="24px">
+                    <use
+                      href="./img/bcg-images/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon">
+                <a href="" class="mobile-list-link">
+                  <svg class="twitter-icon" width="24px" height="24px">
+                    <use
+                      href="./img/bcg-images/symbol-defs.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon">
+                <a href="" class="mobile-list-link">
+                  <svg class="facebool-icon" width="24px" height="24px">
+                    <use
+                      href="./img/bcg-images/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon">
+                <a href="" class="mobile-list-link">
+                  <svg class="linkedin-icon" width="24px" height="24px">
+                    <use
+                      href="./img/bcg-images/symbol-defs.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="portfolio">
-        <div class="container">
+      <section class="portfolio container">
+        <div class="navigation-buttons">
           <ul class="buttons list">
             <li class="item">
               <button type="button" class="link">All</button>
@@ -381,5 +457,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>

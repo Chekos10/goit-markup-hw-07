@@ -75,6 +75,20 @@
     url(../img/bcg-images/hero-tablet-2x.jpg);
   }
 }
+    .buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+    .examples{
+      justify-content: flex-start;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+    .examples .item{
+      width: calc((100% - 32px) / 2);
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1199px){

@@ -118,6 +118,11 @@
 .company .container{
     padding-bottom: 120px;
 }
+.company .list {
+  display: flex;
+  padding-bottom: 0;
+  justify-content: center;
+}
 /* ----HERO--- */
 .hero .tittle {    
     margin-bottom: 48px;
@@ -140,6 +145,10 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../img/bcg-images/hero-2x.jpg);
+  }
+  /*----PORTFOLIO-----*/
+  .examples .item{
+    width: calc((100% - 48px) / 3);
   }
 }
 
